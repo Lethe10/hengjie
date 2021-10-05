@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1920px) {
+    html,
+    body {
+        font-size: .7vw;
+    }
+}
+
+html,
+body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container2 {
+    width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 1920px) {
+    .container2 {
+        width: 100%;
+    }
+}
+
+section {
+    width: 84%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-bottom: 10em;
+}
+
+section.first {
+    margin-top: 7em;
+}
+
+section .title {
+    width: 34%;
+    max-width: 530px;
+    margin: 0 auto;
+}
+
+section .sub-title {
+    text-align: center;
+    font-size: 2em;
+    color: #434343;
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+section .intro {
+    text-align: center;
+    font-size: 1.5em;
+    color: #434343;
+    margin-top: 1em;
+    line-height: 150%;
+}
+
+.video-list.column1 {
+    width: 65.9%;
+    max-width: 1055px;
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-list {
+    margin-top: 4em;
+}
+
+.video-list .play {
+    width: 16%;
+    max-width: 136px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+section .newline {
+    width: 76%;
+    margin: 4em auto 0;
+    position: relative;
+}
+
+section .newline a {
+    display: block;
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+    z-index: 1;
+    width: 20%;
+    height: 13%;
+}
+
+section .logo1 {
+    width: 22.5%;
+    max-width: 433px;
+    margin: 2em auto 0;
+}
+
+.video-list .video {
+    display: block;
+}
+
+.video-list .video .poster {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-list .video .poster:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../picture/play.svg) no-repeat center center;
+    background-size: 16% auto;
+}
+
+.video-list .name {
+    background-color: #d6d6d6;
+    font-size: 1em;
+    padding: .4em .7em;
+    color: #434343;
+    text-align: center;
+}
+
+
+/* 明星分类 一品守护 */
+
+section.full {
+    width: 100%;
+    max-width: none;
+}
+
+.kv2-panel {
+    margin-top: 4.7em;
+}
+
+
+/* 国风好物 一品守护 */
+
+.products {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.7em;
+}
+
+.products a:first-child {
+    margin-left: 0;
+}
+
+.products a {
+    flex: 1 0 23%;
+    margin-left: 2%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0 0 20px rgb(0 0 0 / 8%);
+}
+
+.products a .img-panel {
+    background: radial-gradient(ellipse at center, #fff 0%, #e6e6e6 100%);
+}
+
+.products a:hover {
+    transition: all .5s;
+}
+
+.products a .text {
+    background-color: #fff;
+    padding: 1em .7em;
+    color: #434343;
+    text-align: center;
+}
+
+.products a .text .name {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.products a .text .intro {
+    margin-top: .2em;
+    line-height: 140%;
+    font-size: 1em;
+}
+
+section .intro {
+    text-align: center;
+    color: #434343;
+}
+
+.products a:hover {
+    transform: scale(1.1);
+}
+
+
+/* 视频播放 */
+
+.popup {
+    z-index: 999;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup .panel {
+    width: 70%;
+    height: 80%;
+    position: relative;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 80px;
+    bottom: 0;
+    margin: auto;
+    background-color: #000;
+}
+
+.panel {
+    margin-bottom: 0;
+}
+
+.popup .panel video {
+    width: 100%;
+    height: 100%;
+}
