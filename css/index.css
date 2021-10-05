@@ -1,0 +1,589 @@
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 12.8px;
+    }
+}
+
+.nav {
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+}
+
+.container {
+    margin-bottom: none;
+}
+
+.logo {
+    padding-top: 1.5rem;
+}
+
+.mylistbox {
+    width: 75%;
+    height: 70%;
+    float: right;
+}
+
+.mylist {
+    width: 100%;
+    height: 100%;
+}
+
+.mylist li {
+    border-top: 1px transparent;
+    float: left;
+    width: 9%;
+    padding: 30px 10px 20px 10px;
+}
+
+.mylistbox .mylist li a {
+    color: #fff;
+}
+
+.mylistbox .mylist li a:hover {
+    color: #2A5F93 !important;
+    text-decoration: none;
+}
+
+.sanjiao {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 2;
+}
+
+.mask {
+    display: inline-block;
+    position: absolute;
+    font-size: 60px;
+    color: #2A5F93;
+    font-weight: lighter;
+    top: 0px;
+    width: 78px;
+    height: 74px;
+    display: none;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.sanjiaonav {
+    display: none;
+}
+
+.sanjiao li {
+    box-sizing: border-box;
+    position: relative;
+    border-top: 1px transparent;
+    width: 78px;
+    height: 78px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    border-bottom: dashed 1px #2A5F93;
+}
+
+.sanjiao li:hover .lasbanner {
+    display: block;
+}
+
+.sanjiao li a {
+    margin-top: 3px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+.lasbanner {
+    position: absolute;
+    top: 0;
+    right: 78px;
+    display: none;
+}
+
+.lasbanner a img {
+    margin: 2px 0px;
+}
+
+.lasbanner a .lasimg3 {
+    width: 226px;
+}
+
+
+/* 明星系列 */
+
+.conbox {
+    position: relative;
+}
+
+.conbox a {
+    color: #666666;
+}
+
+header .row {
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, .8);
+    color: #757575 !important;
+}
+
+
+/* 技术服务 */
+
+.star {
+    max-width: 600px;
+    margin: 0px auto;
+    display: none;
+}
+
+.tese {
+    max-width: 600px;
+    margin: 0px auto;
+    display: none;
+}
+
+.star li,
+.tese li {
+    padding: 20px 0px;
+}
+
+.star li a {
+    color: #666666;
+}
+
+
+/* 产品一览 */
+
+.row2 {
+    padding-top: 20px;
+    display: none;
+}
+
+.produ-in {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.produ-in li {
+    margin-bottom: 10px;
+}
+
+.produ-in h5 {
+    color: #2A5F93;
+    border-right: 1px dashed #2A5F93;
+}
+
+
+/* banner */
+
+.banner {
+    z-index: -1;
+    width: 100%;
+}
+
+
+/* 智能一体机部分 */
+
+.feedomnavbox {
+    width: 100%;
+    height: 11rem;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.feedomnav {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 36px 0px;
+}
+
+#feedlist {
+    width: 100%;
+    font-size: 12px;
+}
+
+#feedlist>li {
+    width: 11%;
+    float: left;
+    padding: 20px 0px;
+    border-right: 1px dashed #D8D8D8;
+    position: relative;
+}
+
+#feedlist>li a {
+    color: #555555;
+}
+
+#feedlist ul {
+    position: absolute;
+    width: 100%;
+    top: 96px;
+}
+
+#feedlist>li img {
+    margin-bottom: 10px;
+}
+
+#feedlist>li ul {
+    display: none;
+}
+
+#feedlist ul>li {
+    background-color: rgba(255, 255, 255, .8);
+    width: 100%;
+    border-bottom: 1px dashed #D8D8D8;
+    padding: 3px 0px;
+}
+
+#feedlist ul>li>a {
+    color: #959595;
+}
+
+#feedlist ul li span {
+    margin-bottom: 10px;
+}
+
+
+/* adv */
+
+.adv .adva {
+    position: relative;
+    width: 25%;
+    margin-left: -5px;
+    display: inline-block;
+}
+
+.advimg1 {
+    width: 100%;
+}
+
+.advimg {
+    position: absolute;
+    left: 40%;
+    bottom: 9%;
+    text-align: center;
+}
+
+.advimg img {
+    margin-bottom: 20px;
+}
+
+.advimg span {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* 恒洁畅销榜单 */
+
+.dan {
+    max-width: 1400px;
+    height: 606px;
+    margin: 0 auto;
+    background: url(../images/index-img2.jpg) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.dan>div {
+    float: left;
+}
+
+.danleft {
+    padding: 45px 0px;
+    width: 55%;
+}
+
+.danleftbox {
+    width: 500px;
+}
+
+.danleftbox-title {
+    width: 400px;
+    height: 154px;
+}
+
+.danleftbox>div {
+    position: relative;
+    padding: 10px;
+}
+
+.topmask {
+    position: absolute;
+    top: 9px;
+    width: 92%;
+    height: 40%;
+    z-index: 1;
+    background-color: rgba(26, 55, 99, .9);
+    display: none;
+    color: #fff;
+}
+
+.topmask span {
+    position: relative;
+    left: -2px;
+}
+
+.topmask a {
+    color: #fff;
+}
+
+.topmask p {
+    padding: 0px 10px;
+}
+
+
+/* 恒洁畅销榜单右边 */
+
+.danrigth {
+    width: 45%;
+    padding: 45px 0px;
+    color: #fff;
+}
+
+.danrightbox {
+    width: 100%;
+    height: 142px;
+    background: url(../images/product-ranking-1366.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.danrightbox h3 {
+    padding: 10px 0px;
+}
+
+.danrightbox span {
+    position: relative;
+    left: -4px;
+}
+
+.ap {
+    position: relative;
+}
+
+.xiangqing,
+.zan {
+    display: inline-block;
+    position: absolute;
+}
+
+.xiangqing {
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.zan {
+    top: 8px;
+    right: 200px;
+    color: #fff;
+}
+
+.zan:hover {
+    color: #2A5F93;
+}
+
+.danrightimg {
+    width: 500px;
+}
+
+.danrightimg img {
+    width: 104%;
+}
+
+
+/* 套件灵感 */
+
+.ling {
+    width: 100%;
+}
+
+
+/* 万家一品 */
+
+.wangjia1 {
+    padding-top: 40px;
+}
+
+.wanbox {
+    max-width: 336px;
+}
+
+.a1 {
+    float: right;
+}
+
+.a2 {
+    float: left;
+}
+
+.wanbox a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.wanbox img {
+    width: 100%;
+}
+
+.wanjia {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 25%;
+    color: #fff;
+    background-color: rgba(26, 55, 99, .8);
+    padding-top: 30px;
+}
+
+
+/* 万家一品第二行 */
+
+.wangjia2 {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.wanjiabox2 {
+    width: 214px;
+    height: 214px;
+    margin-top: 5px;
+}
+
+.wanjiabox2 a {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.wangjia2mask {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 55, 99, .8);
+    transition: all 1s linear;
+}
+
+.wangjia2mask span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wanjiabox2:hover .wangjia2mask {
+    opacity: 0;
+}
+
+
+/* 尾部 */
+
+footer {
+    background-color: #f6f6f6;
+    padding: 4rem;
+}
+
+.footerbox {
+    max-width: 950px;
+}
+
+.footerup {
+    width: 100%;
+}
+
+footer a,
+footer p,
+footer div {
+    font-size: 14px;
+    color: #8D898C;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer h2 {
+    margin: 10px 0px;
+}
+
+footer i {
+    font-style: normal;
+}
+
+
+/* 微信微博 */
+
+.weixin,
+.weibo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 23px;
+    background: url(../images/icon-footer-social.png) no-repeat;
+}
+
+.weibo {
+    background-position: 0px -23px;
+}
+
+.lastwei {
+    position: absolute;
+    top: -158px;
+    left: -52px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+    transition: all .5s linear;
+}
+
+.lastwei img {
+    width: 100%;
+}
+
+
+/* 回到顶部 */
+
+.back-top {
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+}
+
+.back-top a {
+    display: inline-block;
+    width: 100%;
+}
+
+.back-top img {
+    width: 100%;
+}
+
+
+/* 尾部列表 */
+
+.footerlist li {
+    padding: 0px 8px;
+    border-right: 1px solid #8D898C;
+    float: left;
+}
+
+.footerbottom {
+    margin-top: 20px;
+}
+
+.footerlist .footerlistli {
+    border: none;
+}
